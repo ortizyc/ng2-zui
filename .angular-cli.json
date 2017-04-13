@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/ionic-angular/css/ionic.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

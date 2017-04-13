@@ -1,0 +1,135 @@
+.msg {
+    text-align: center;
+    background-color: transparent;
+}
+.head_internet-img{
+    content: url('../assets/images/case_internet.png');
+}
+.time {
+    background: #D8E1EF;
+    border-radius: 8.6rem;
+    width: 18.4%;
+    height: 1.4rem;
+    margin: auto;
+    margin-top: 2rem;
+
+    span {
+        font-family: PingFangSC-Regular;
+        font-size: 1rem;
+        -webkit-transform: scale(0.83);
+        display: block;
+        color: #FFFFFF;
+        letter-spacing: -0.42px;
+        line-height: 1.5rem;
+    }
+}
+
+.content {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 94.6%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1.5rem 0.5rem;
+}
+
+ion-col {
+    padding: 0;
+}
+
+ion-col.head {
+    div{
+        position: relative;
+        top: 50%;
+        margin-top: -0.9rem;
+
+        img {
+            width: 1.4rem;
+            height: 1.4rem;
+            display: block;
+            margin: auto;
+        }
+
+        span {
+            font-family: PingFangSC-Regular;
+            font-size: 1rem;
+            -webkit-transform: scale(0.7);
+            display: block;
+            color: #40B5C4;
+            letter-spacing: -0.5px;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+ion-col.body {
+    text-align: left;
+    .case-id {
+        font-family: DIN-Medium;
+        font-size: 1.8rem;
+        color: #2E3235;
+        letter-spacing: -0.5px;
+        line-height: 1.8rem;
+        font-weight: bold;
+    }
+    .type {
+        font-family: PingFangSC-Regular;
+        font-size: 1.8rem;
+        color: #2E3235;
+        letter-spacing: -0.5px;
+        line-height: 2.5rem;
+    }
+    .desc {
+        font-family: PingFangSC-Regular;
+        font-size: 1.2rem;
+        color: #9F9EA3;
+        letter-spacing: -0.5px;
+        line-height: 1.4rem;
+        display: block;
+    }
+}
+
+ion-col.foot {
+    div {
+        position: relative;
+        top: 50%;
+        margin-top: -1.7rem;
+    }
+    .status {
+        border: 1px solid #10C4B1;
+        border-radius: 3px;
+        span {
+            font-family: PingFangSC-Medium;
+            font-size: 9px;
+            -webkit-transform: scale(0.75);
+            color: #10C4B1;
+            letter-spacing: -0.45px;
+            line-height: 10px;
+            display: block;
+            padding:2px;
+        }
+    }
+
+    .name {
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #3B3F4B;
+        letter-spacing: -0.5px;
+        line-height: 12px;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .role {
+        font-family: PingFangSC-Regular;
+        font-size: 0.9rem;
+        -webkit-transform: scale(0.75);
+        color: #9F9EA3;
+        letter-spacing: -0.37px;
+        line-height: 1rem;
+    }
+}
+
+.active {
+    background-color: #D8E1EF;
+}

@@ -1,0 +1,45 @@
+<div class="msg" (mousedown)="isActive = true" (mousemove)="isActive = false" (mouseup)="isActive = false">
+  <div class="time"><span>{{time}}</span></div>
+  <div class="content" [ngClass]="{active: isActive}">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="head" width-15>
+          <div>
+             <img class="head_internet-img" alt="">
+             <span>网络</span>
+          </div>
+        </ion-col>
+        <ion-col class="body" width-75>
+          <span class="case-id">
+            80889080
+          </span>
+          <span class="type">
+            (鼓楼·网络故障)
+          </span>
+          <span class="desc">
+            CASE：9144，网络通讯 (NET00408920)
+          </span>
+          <span class="desc">
+            鼓楼区北京东路359号雨润大厦
+          </span>
+        </ion-col>
+        <ion-col class="foot" width-15>
+          <div>
+            <div class="status">
+              <span>
+                处理中
+              </span>
+            </div>
+
+            <span class="name">
+              陈都灵
+            </span>
+             <span class="role">
+              管机员
+            </span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>

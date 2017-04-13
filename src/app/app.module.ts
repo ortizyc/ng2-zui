@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { IonicApp, IonicModule } from "ionic-angular";
+
 import { AppComponent } from './app.component';
-import { TestComponent } from './exports/test/test.component';
+import { ZuiNg2Module } from "./exports/zui";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TestComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        ZuiNg2Module,
+        IonicModule.forRoot(AppComponent)
+    ],
+    providers: [],
+    bootstrap: [IonicApp]
 })
 export class AppModule { }
