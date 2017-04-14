@@ -6,10 +6,14 @@ import { EchartsNg2Module } from "echarts-ng2";
 
 import { MessageComponent } from "./message/message.component";
 import { CircleRateComponent } from "./circle-rate/circle-rate.component";
+import { GridButtonComponent } from './grid-button/grid-button.component';
+import { TimeAxisComponent } from './time-axis/time-axis.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
-    CircleRateComponent
+    CircleRateComponent,
+    GridButtonComponent,
+    TimeAxisComponent
 ]
 
 @NgModule({

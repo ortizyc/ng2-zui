@@ -1,0 +1,26 @@
+.grid_button_group{
+    display: flex;
+    width: 100%;
+    .grid_button{
+        width:33.33%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-right:1px solid #E1E1E1;
+        border-bottom:1px solid #E1E1E1;
+        padding:1rem 2rem;
+        ul{
+            list-style: none;
+            padding:0px;
+            li {
+                img{
+                    height:3rem;
+                }
+                font-family: PingFangSC-Regular;
+                font-size: 1rem;
+                color: #3B3F4B;
+            }
+        }
+
+    }
+}

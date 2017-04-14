@@ -1,0 +1,65 @@
+.times {
+    position: static;
+    ul {
+        list-style-type: none;
+        margin-left:2rem;
+        border-left:2px solid #ddd;
+        padding-left:0px;
+        li {
+            width:100%;
+            margin-left:-8px;
+            line-height:20px;
+            font-weight:narmal;
+            b {
+                width:14px;
+                height:14px;
+                border-radius:50%;
+                background: -webkit-radial-gradient(circle,#D8D8D8 , #D8D8D8 40%, rgba(255,255,255,0) 40.01%, rgba(255,255,255,0) 100%);;
+                display:inline-block;
+            }
+            span {
+                padding-left:3rem;
+                font-size:1.5rem;
+                line-height:20px;
+                color:#555;
+            }
+            div{
+                padding-left:3rem;
+                p {
+                    padding-left:15px;
+                    font-size:1rem;
+                    line-height:25px;
+                    margin-top:0px;
+                }
+                p.time{
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+
+            &:hover{
+                b {
+                    background: -webkit-radial-gradient(circle,#10C4B1 , rgba(16,196,177,0.2) 57.1%, rgba(16,196,177,0.2) 100%);
+                }
+                span {
+                    font-family: PingFangSC-Regular;
+                    color: #10C4B1;
+                }
+                div{
+                    p {
+                        font-family: PingFangSC-Regular;
+                        color: #10C4B1;
+                    }
+                }
+            }
+        }
+    }
+}
+/*首先，我们要创建一个容器class*/
+/*利用ul标签的特性，设置外边框左移25px，左边边框是2px粗的实心线，颜色一般要浅一点*/
+/*一般情况，通过li标签控制圆点回到时间线上，然后控制要出现的文字大小和是否粗体*/
+/*利用处理加粗以外没有其它特别属性b标签做时间轴的圆点。*/
+/*设置span标签的属性，让它来做时间显示，加一点边距，使时间显示离时间线远一点*/
+
+/*注意这一行，前面的li标签后面加了一个:hover伪属性，意思是鼠标移上来，激活后面的属性，这样可以设置鼠标移动到整个时间范围的时候，时间点和时间显示会变色*/
+/*同上*/
+/*这里利用段落标签p做文字介绍*/
