@@ -22,4 +22,8 @@ export class AppComponent {
     constructor(){
         // setInterval(()=>this.percent+=0.05,1000);
     }
+
+    gotoPage(event){
+        console.log(event);
+    }
 }
