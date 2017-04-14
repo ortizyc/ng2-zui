@@ -65,6 +65,7 @@ ion-col.head {
 ion-col.body {
     text-align: left;
     .case-id {
+        margin:5px 0px 5px 0px;
         font-family: DIN-Medium;
         font-size: 1.8rem;
         color: #2E3235;
@@ -80,6 +81,7 @@ ion-col.body {
         line-height: 2.5rem;
     }
     .desc {
+        margin:0px;
         font-family: PingFangSC-Regular;
         font-size: 1.2rem;
         color: #9F9EA3;

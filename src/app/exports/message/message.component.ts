@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 export class Message {
     time:string;
@@ -35,6 +35,9 @@ export class MessageComponent implements OnInit {
     @Input()
     msgList:Array<Message> = new Array<Message>();
 
+    @Output()
+    msgClickEvent:EventEmitter<Message> = new EventEmitter<Message>();
+
     isActive = false;
 
     constructor() {
@@ -51,5 +54,8 @@ export class MessageComponent implements OnInit {
 
     ngOnInit() { }
 
+    msgClick(ev:Message){
+        this.msgClickEvent.next(ev);
+    }
 
 }
