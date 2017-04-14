@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from "ionic-angular";
 import { EchartsNg2Module } from "echarts-ng2";
 
-import { Config } from "./config";
 import { MessageComponent } from "./message/message.component";
 import { OpenRateComponent } from "./open-rate/open-rate.component";
 
@@ -32,7 +31,6 @@ export class ZuiNg2Module {
         return {
             ngModule:ZuiNg2Module,
             providers:[
-                { provide:Config, useClass:Config }
             ]
         }
     }

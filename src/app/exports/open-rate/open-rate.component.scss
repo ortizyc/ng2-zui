@@ -1,7 +1,33 @@
 .title_panel-div {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:50px;
+    ul{
+        list-style-type: none;
+        font-family: PingFangSC-Regular;
+        padding-left:0rem;
+        text-align: center;
+        .title_panel_time{
+            opacity: 0.7;
+            font-size: 1.2rem;
+            color: #9FB8F8;
+            letter-spacing: -0.55px;
+            line-height: 1.2rem;
+        }
+        .title_panel_value{
+            font-family: DINCond-Medium;
+            color:#FFF;
+            font-size: 4.17rem;
+            text-shadow: 0 2px 2px #0052C2;
+            sup {
+                font-family: PingFangSC-Regular;
+                font-size: 2rem;
+            }
+        }
+        .title_panel_sub {
+            opacity: 0.7;
+            font-size: 1.2rem;
+            color: #BED0FF;
+            letter-spacing: -0.5px;
+            line-height: 1.2rem;
+        }
+    }
 }
 

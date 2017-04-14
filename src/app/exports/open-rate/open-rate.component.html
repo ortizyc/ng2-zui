@@ -1,11 +1,11 @@
-<echarts-ng2 #echartsNg2 [option]="_option" [style]="{'height':height}"></echarts-ng2>
-
-<div class="title_panel-div">
-    <div>
-        <p class="title_panel_value-p">{{_percent}}<sup>%</sup>
-        </p>
+<div>
+    <echarts-ng2 #echartsNg2 [option]="_option" [style]="{'height':height}"></echarts-ng2>
+    <div class="title_panel-div" [style.marginTop.px]="_top">
+        <ul>
+            <li class="title_panel_time">{{_yesterday}}</li>
+            <li class="title_panel_value">{{_percent}}<sup>%</sup></li>
+            <li class="title_panel_sub">平均开机率</li>
+        </ul>
     </div>
-
-    <p class="title_panel_sub-p">平均开机率</p>
-    <p class="title_panel_time-p">评估时间{{_yesterday}}</p>
 </div>
+

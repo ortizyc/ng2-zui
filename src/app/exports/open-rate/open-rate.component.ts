@@ -19,6 +19,7 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
     private _option;
     private _clientWidth: number;
     private _clientHeight: number;
+    private _top:number;
 
 
     @ViewChild('echartsNg2')
@@ -31,10 +32,11 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
     height:number = 320;
 
     constructor() {
-        this._yesterday = moment().add(-1, 'd').format();
+        this._yesterday = moment().add(-1, 'd').format('YYYY.MM.DD');
     }
 
     ngOnInit() {
+        this._top = -(this.height+7.1*14)/2;
     }
 
     ngAfterViewInit() {
@@ -71,15 +73,15 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
                             itemStyle: {
                                 normal: {
                                     color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [{
-                                        offset: 0, color: '#27E7FF' // 0% 处的颜色
+                                        offset: 0, color: '#33FFF3' // 0% 处的颜色
                                     }, {
-                                        offset: 1, color: '#9868FF' // 100% 处的颜色
+                                        offset: 1, color: '#AD80FF' // 100% 处的颜色
                                     }], false),
                                     borderWidth: parseInt(this._clientWidth * 0.02 + ''),
                                     borderColor: new echarts.graphic.LinearGradient(0, 0, 1, 1, [{
-                                        offset: 0, color: '#27E7FF' // 0% 处的颜色
+                                        offset: 0, color: '#33FFF3' // 0% 处的颜色
                                     }, {
-                                        offset: 1, color: '#9868FF' // 100% 处的颜色
+                                        offset: 1, color: '#AD80FF' // 100% 处的颜色
                                     }], false)
                                 }
                             }
@@ -90,7 +92,7 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
                             itemStyle: {
                                 normal: {
                                     borderWidth: parseInt(this._clientWidth * 0.01 + ''),
-                                    borderColor: 'rgba(255, 255, 255, 0.3)'
+                                    borderColor: 'rgba(50,196,255,0.4)'
                                 }
                             }
                         }
