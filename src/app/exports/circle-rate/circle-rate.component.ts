@@ -7,11 +7,11 @@ import * as echarts from "echarts";
 import * as moment from "moment";
 
 @Component({
-    selector: 'zui-open-rate',
-    templateUrl: './open-rate.component.html',
-    styleUrls: ['./open-rate.component.scss'],
+    selector: 'zui-circle-rate',
+    templateUrl: './circle-rate.component.html',
+    styleUrls: ['./circle-rate.component.scss'],
 })
-export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
+export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
 
     private _percent;
     private _yesterday;
@@ -30,6 +30,9 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
 
     @Input()
     height:number = 320;
+
+    @Input()
+    type:string = "平均开机率";
 
     constructor() {
         this._yesterday = moment().add(-1, 'd').format('YYYY.MM.DD');
@@ -55,7 +58,7 @@ export class OpenRateComponent implements OnInit, AfterViewInit, OnChanges {
     echartsNg2Init() {
         let markX = 50 + (this._clientHeight / this._clientWidth) * 43 * Math.sin(360 * this.percent * Math.PI / 180) + '%';
         let markY = 50 - 43 * Math.cos(360 * this.percent * Math.PI / 180) + '%';
-
+        console.log(markX);
         this._option = {
             series: [
                 {

@@ -16,9 +16,10 @@
             color:#FFF;
             font-size: 4.17rem;
             text-shadow: 0 2px 2px #0052C2;
-            sup {
+            span {
+                vertical-align: super;
                 font-family: PingFangSC-Regular;
-                font-size: 2rem;
+                font-size: 1.2rem;
             }
         }
         .title_panel_sub {

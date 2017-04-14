@@ -5,11 +5,11 @@ import { IonicModule } from "ionic-angular";
 import { EchartsNg2Module } from "echarts-ng2";
 
 import { MessageComponent } from "./message/message.component";
-import { OpenRateComponent } from "./open-rate/open-rate.component";
+import { CircleRateComponent } from "./circle-rate/circle-rate.component";
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
-    OpenRateComponent
+    CircleRateComponent
 ]
 
 @NgModule({
