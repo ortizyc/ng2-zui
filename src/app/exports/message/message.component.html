@@ -1,5 +1,5 @@
 <div *ngFor="let msg of msgList">
-    <div class="msg" (mousedown)="isActive = true" (mousemove)="isActive = false" (mouseup)="isActive = false" (click)="msgClick(msg)">
+    <div class="msg" (mousedown)="isActive = true" (mousemove)="isActive = false" (mouseup)="isActive = false" (click)="onClick(msg)">
         <div class="time"><span>{{msg.time}}</span></div>
         <div class="content" [ngClass]="{active: isActive}">
             <ion-grid>

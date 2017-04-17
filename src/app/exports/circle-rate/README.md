@@ -49,12 +49,16 @@ circle-rate.component.[ts|html|css]
 
 ### 1.7 Lifecycle
 
-
 |   | 输入 | 作用域 | 返回类型 | 返回值 |
 | --- | --- | --- | --- | --- |
 | ngOnInit | 无 | public | 无 | 无 |
 | ngAfterViewInit | 无 | public | 无 | 无 |
 | ngOnChanges | 无 | Public | 无 | 无 |
+
+### 1.8 Methods
+
+|  | 输入 | 作用域 | 返回类型 | 返回值 |
+| --- | --- | --- | --- | --- |
 | echartsNg2Init | 无 | public | 无 | 无 |
 
 ## 2 Example

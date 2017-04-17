@@ -1,6 +1,6 @@
 <div class="times">
     <ul>
-        <li *ngFor="let ta of timeaxis">
+        <li *ngFor="let ta of timeaxis" (click)="onClick(ta)">
             <b></b><span>{{ta.name}}</span>
             <div>
                 <p class="description">{{ta.description}}</p>

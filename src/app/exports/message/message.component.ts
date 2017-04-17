@@ -36,26 +36,17 @@ export class MessageComponent implements OnInit {
     msgList:Array<Message> = new Array<Message>();
 
     @Output()
-    msgClickEvent:EventEmitter<Message> = new EventEmitter<Message>();
+    msgClick:EventEmitter<Message> = new EventEmitter<Message>();
 
-    isActive = false;
+    isActive:boolean = false;
 
     constructor() {
-        this.msgList.push(new Message(
-            "10-28 14:30",
-            "网络",
-            "80889080(鼓楼·网络故障)",
-            "CASE:9144,网络通讯（NET00408920)",
-            "鼓楼区北京西路359号雨润大厦",
-            "处理中",
-            "吴青峰"
-        ))
     }
 
     ngOnInit() { }
 
-    msgClick(ev:Message){
-        this.msgClickEvent.next(ev);
+    onClick(ev:Message){
+        this.msgClick.emit(ev);
     }
 
 }

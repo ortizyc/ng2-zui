@@ -24,7 +24,7 @@ export class GridButtonComponent implements OnInit {
     ngOnInit() {
     }
 
-    click(btn:GridButton){
+    onClick(btn:GridButton){
         this.btnClick.next(btn);
     }
 }
