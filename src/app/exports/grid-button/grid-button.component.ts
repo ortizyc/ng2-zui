@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class GridButton {
     icon:string;
     name:string;
-    payload?:object;
+    payload?:Object;
 }
 
 @Component({

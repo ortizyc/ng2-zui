@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, OnChanges, Input, ViewChild, Query } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnChanges, Input, ViewChild, Query, ChangeDetectorRef } from '@angular/core';
 
 import { EchartsNg2Component } from "echarts-ng2";
 
@@ -34,7 +34,7 @@ export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
     @Input()
     type:string = "平均开机率";
 
-    constructor() {
+    constructor(private _changeDetectorRef:ChangeDetectorRef) {
         this._yesterday = moment().add(-1, 'd').format('YYYY.MM.DD');
     }
 
@@ -43,11 +43,11 @@ export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
     }
 
     ngAfterViewInit() {
-        this._percent = (this.percent * 100).toFixed(1) + '';    //界面显示精确小数点
-        this._clientHeight = this._echartsNg2Component.getHeight();
-        this._clientWidth = this._echartsNg2Component.getWidth();
-
-        this.echartsNg2Init();
+            this._percent = (this.percent * 100).toFixed(1) + '';    //界面显示精确小数点
+            this._clientHeight = this._echartsNg2Component.getHeight();
+            this._clientWidth = this._echartsNg2Component.getWidth();
+            this.echartsNg2Init();
+            this._changeDetectorRef.detectChanges()
     }
     ngOnChanges(){
         if(this._option){
