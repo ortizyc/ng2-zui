@@ -11,7 +11,6 @@ import { ZuiNg2Module } from "./exports/zui";
 @NgModule({
     declarations: [
         AppComponent
-
     ],
     imports: [
         BrowserModule,
