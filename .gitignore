@@ -45,3 +45,5 @@ Thumbs.db
 # Custom
 yarn.lock
 .vscode
+.angular-cli.json
+.editorconfig
