@@ -1,0 +1,23 @@
+.zui-avatar_bg{
+    content: url('../assets/images/mine_bg.png');
+    height:17rem;
+}
+.zui-avatar{
+    position: absolute;
+    top:0px;
+    height:17rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .zui-avatar_img{
+        height:7rem;
+        width:7rem;
+        border-radius:50%;
+        content:url('../assets/images/icon_sniffer.png')
+    }
+    .zui-avatar_p{
+        font-size:1.2rem;
+    }
+}

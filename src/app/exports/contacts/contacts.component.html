@@ -1,0 +1,23 @@
+<div class="contacts">
+    <div class="zui-classification" *ngFor="let letter of existInContacts()">
+        <div class="zui-classification-header" id="{{letter}}">
+            <!--<img class="zui-classification-img"/>-->
+            <span class="zui-classification-font">{{letter}}</span>
+        </div>
+        <ion-list>
+            <ion-item *ngFor="let contact of _fmContact[letter].sort()">
+                <div>
+                    <img class="zui-avator" src="./assets/images/icon_sniffer.png">
+                    <span class="zui-name">{{contact.name}}</span>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="zui-sidenav">
+        <nav>
+            <ul>
+                <li *ngFor="let letter of _sideNav"><a href="#{{letter}}">{{letter}}</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

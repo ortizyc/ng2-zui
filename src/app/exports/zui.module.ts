@@ -8,17 +8,21 @@ import { MessageComponent } from "./message/message.component";
 import { CircleRateComponent } from "./circle-rate/circle-rate.component";
 import { GridButtonComponent } from './grid-button/grid-button.component';
 import { TimeAxisComponent } from './time-axis/time-axis.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ZavatarComponent } from './zavatar/zavatar.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
     CircleRateComponent,
     GridButtonComponent,
-    TimeAxisComponent
+    TimeAxisComponent,
+    ContactsComponent,
+    ZavatarComponent
 ]
 
 @NgModule({
     declarations: [
-        ...CUSTOM_COMPONENT
+        ...CUSTOM_COMPONENT,
     ],
     imports: [
         CommonModule,
