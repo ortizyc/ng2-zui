@@ -1,0 +1,35 @@
+<ion-list *ngIf="clickable">
+    <button ion-item *ngFor="let item of collection" (click)="item.click($event)">
+    <ion-row>
+      <ion-col width-25 *ngIf="!!item.imgName" align-self-center>
+        <img [attr.src]="'assets/images/' + item.imgName">
+      </ion-col>
+      <ion-col width-75>
+        <div class="title">
+          <span>{{item?.title}}</span>
+          <span>({{item?.subTitle}})</span>
+        </div>
+        <div class="introduction">{{item?.introduction}}</div>
+        <div class="content">{{item?.content}}</div>
+      </ion-col>
+    </ion-row>
+  </button>
+</ion-list>
+
+<ion-list *ngIf="!clickable">
+   <ion-item *ngFor="let item of collection" >
+    <ion-row>
+      <ion-col width-25 *ngIf="!!item.imgName" align-self-center>
+        <img [attr.src]="'assets/images/' + item.imgName">
+      </ion-col>
+      <ion-col width-75>
+        <div class="title">
+          <span>{{item?.title}}</span>
+          <span>({{item?.subTitle}})</span>
+        </div>
+        <div class="introduction">{{item?.introduction}}</div>
+        <div class="content">{{item?.content}}</div>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-list>
