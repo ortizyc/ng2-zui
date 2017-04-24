@@ -1,0 +1,6 @@
+<ion-list>
+  <button ion-item *ngFor="let item of content" (click)="item.click($event)">
+      <ion-label>{{item.label}}</ion-label>
+      <ion-note item-right>{{item.note}}</ion-note>
+  </button>
+</ion-list>

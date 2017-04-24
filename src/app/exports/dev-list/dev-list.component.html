@@ -1,0 +1,25 @@
+<ion-list>
+  <ion-item *ngIf="devices.length == 0">无设备信息</ion-item>
+  <button class="device-item" ion-item *ngFor="let device of devices" (click)="openDetail(device)">
+      <ion-row class="deviceInfo-row">
+        <ion-col width-20 align-self-center>
+          <img [attr.src]="'assets/images/brand_' + device.devType.devVendor.name + '.svg'"
+               onerror="this.src='assets/images/brand_UNKNOWN.svg'">
+        </ion-col>
+        <ion-col class="devInfo-col" width-75>
+          <ion-row class="devInfo-devNo-row">
+            <ion-col class="devInfo-devNo">{{device.no}}({{device.org.name}})</ion-col>
+          </ion-row>
+          <ion-row class="devInfo-address-row">
+            <ion-col class="devInfo-address">{{device.address}}</ion-col>
+          </ion-row>
+          <ion-row class="devInfo-status-row">
+            <ion-col width-25 class="{{device.cdevRunStatus}}" text-center>{{device.devRunStatus}}</ion-col>
+            <ion-col width-25 class="{{device.cdevModStatus}}" text-center>模块{{device.devModStatus}}</ion-col>
+            <ion-col width-25 class="{{device.cdevCashStatus}}" text-center>{{device.devCashStatus}}</ion-col>
+            <ion-col width-25 class="{{device.cdevNetStatus}}" text-center>网络{{device.devNetStatus}}</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </button>
+</ion-list>

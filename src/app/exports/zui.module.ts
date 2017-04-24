@@ -10,6 +10,10 @@ import { GridButtonComponent } from './grid-button/grid-button.component';
 import { TimeAxisComponent } from './time-axis/time-axis.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ZavatarComponent } from './zavatar/zavatar.component';
+import { SelectBarComponent } from './select-bar/select-bar.component';
+import { DevListComponent } from './dev-list/dev-list.component';
+import { FeatureListComponent } from './feature-list/feature-list.component';
+import { ZlistComponent } from './zlist/zlist.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
@@ -17,7 +21,11 @@ const CUSTOM_COMPONENT = [
     GridButtonComponent,
     TimeAxisComponent,
     ContactsComponent,
-    ZavatarComponent
+    ZavatarComponent,
+    SelectBarComponent,
+    DevListComponent,
+    FeatureListComponent,
+    ZlistComponent
 ]
 
 @NgModule({

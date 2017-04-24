@@ -1,0 +1,30 @@
+ ::-webkit-scrollbar{display: none}
+
+ .scroll-bar {
+    overflow: auto;
+    border-bottom: 0.55px solid #c8c7cc;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 0px 0px #B2B2B2;
+    padding-top: 3%;
+    font-family: PingFangSC-Regular;
+    font-size: 1.5rem;
+    color: #6B6B6B;
+    letter-spacing: -0.34px;
+
+    ion-col{
+      padding:0%;
+    }
+    span{
+      width:65%;
+      display: block;
+      height: 100%;
+      white-space: nowrap;
+      margin-left: 10%;
+      overflow: hidden;
+      padding-bottom: 12%;
+    }
+    .selected-item {
+      color:#0C84D9;
+      border-bottom: 3px solid #0C84D9;
+    }
+  }
