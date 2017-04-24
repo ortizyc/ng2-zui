@@ -1,0 +1,12 @@
+<ion-row class="scroll-bar" style="overflow: auto" nowrap text-center>
+  <ion-col width-25>
+    <span [class.selected-item]="selectedItem == '全部'" (click)="selected('全部',-1)">
+        全部
+      </span>
+  </ion-col>
+  <ion-col width-25 *ngFor="let item of dataList">
+    <span nowrap [class.selected-item]="selectedItem == item.name" (click)="selected(item.name,item.no)">
+        {{item.name}}
+      </span>
+  </ion-col>
+</ion-row>

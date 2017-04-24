@@ -8,12 +8,20 @@ import { MessageComponent } from "./message/message.component";
 import { CircleRateComponent } from "./circle-rate/circle-rate.component";
 import { GridButtonComponent } from './grid-button/grid-button.component';
 import { TimeAxisComponent } from './time-axis/time-axis.component';
+import { SelectBarComponent } from './select-bar/select-bar.component';
+import { DevListComponent } from './dev-list/dev-list.component';
+import { FeatureListComponent } from './feature-list/feature-list.component';
+import { ZlistComponent } from './zlist/zlist.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
     CircleRateComponent,
     GridButtonComponent,
-    TimeAxisComponent
+    TimeAxisComponent,
+    SelectBarComponent,
+    DevListComponent,
+    FeatureListComponent,
+    ZlistComponent
 ]
 
 @NgModule({

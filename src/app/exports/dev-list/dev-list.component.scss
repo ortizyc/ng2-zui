@@ -1,0 +1,92 @@
+  ion-list {
+    margin-top: 2% !important;
+
+    .item-block:first-child{
+        border-top: none !important;
+    }
+  }
+
+    .deviceInfo-row {
+    ion-col{
+      padding:0px;
+    }
+    .devInfo-col{
+      margin-left: 3%;
+
+      .devInfo-devNo-row{
+        padding-left: -1%;
+
+        .devInfo-devNo {
+          font-family: PingFangSC-Medium;
+          font-size: 1.8rem;
+          color: #000000;
+          letter-spacing: 0.21px;
+        }
+      }
+
+      .devInfo-address-row{
+        padding-left: -1%;
+        padding-top: 1.5%;
+
+        .devInfo-address {
+          font-family: PingFangSC-Regular;
+          font-size: 1.2rem;
+          color: #999999;
+          letter-spacing: 0.14px;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;   
+        }
+      }
+
+      .devInfo-status-row{
+        margin-top: 1%;
+        ion-col{
+          padding-bottom: 1%;
+          padding-top: 1%;
+          margin-left: -2%;
+        }
+      }
+    }
+  }
+
+  .UNKNOWN {
+    border: 1px solid #999999;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 1.1rem;
+    color: #999999;
+    letter-spacing: 0.11px;
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(1);
+  }
+  .STOP, .FATAL, .NOSERVICE, .NETFATAL, .EMPTY {
+    border: 1px solid #FF6565;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 1.1rem;
+    color: #FF6565;
+    letter-spacing: 0.11px;
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(1);
+  }
+  .HEALTHY, .OK {
+    border: 1px solid #0C84D9;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 1.1rem;
+    color: #0C84D9;
+    letter-spacing: 0.11px;
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(1);
+  }
+  .WARNING, .PARTSERVICE, .CLOSE, .MAINTAIN, .LOW, .FULL {
+    font-family: PingFangSC-Regular;
+    font-size: 1.1rem;
+    color: #FF9D02;
+    letter-spacing: 0.11px;
+    border: 1px solid #FF9D02;
+    border-radius: 2px;
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(1);
+  }
