@@ -14,6 +14,7 @@ import { SelectBarComponent } from './select-bar/select-bar.component';
 import { DevListComponent } from './dev-list/dev-list.component';
 import { FeatureListComponent } from './feature-list/feature-list.component';
 import { ZlistComponent } from './zlist/zlist.component';
+import { RateViewComponent } from './rate-view/rate-view.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
@@ -25,7 +26,8 @@ const CUSTOM_COMPONENT = [
     SelectBarComponent,
     DevListComponent,
     FeatureListComponent,
-    ZlistComponent
+    ZlistComponent,
+    RateViewComponent,
 ]
 
 @NgModule({
