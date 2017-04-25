@@ -7,9 +7,25 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ZavatarComponent implements OnInit {
 
+    @Input()
+    avatarSrc:string;
+
+    @Output()
+    loginClick:EventEmitter<any> = new EventEmitter<any>();
+
+    @Output()
+    registerClick:EventEmitter<any> = new EventEmitter<any>();
+
     constructor() { }
 
     ngOnInit() {
     }
 
+    onLoginClick(){
+        this.loginClick.emit('Login');
+    }
+
+    onRegisterClick(){
+        this.registerClick.emit('Register');
+    }
 }

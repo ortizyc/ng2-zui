@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as pinyin from "pinyin";
 
 export class Contact {
-    constructor(public name: string, public phone: string) { }
+    constructor(public name: string, public phone: string, public pic?:string) { }
 }
 
 @Component({
