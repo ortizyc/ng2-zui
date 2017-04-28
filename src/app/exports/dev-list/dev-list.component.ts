@@ -6,9 +6,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dev-list.component.scss']
 })
 export class DevListComponent implements OnInit {
-
+  devList = [];
   @Input()
-  devices = [];
+  set devices(param) {
+    if(!param){
+      this.devList = [];
+      return;
+    }
+    this.devList = param;
+  }
   @Output()
   itemClick = new EventEmitter();
 

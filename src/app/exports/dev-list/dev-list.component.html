@@ -1,6 +1,6 @@
 <ion-list>
-  <ion-item *ngIf="devices.length == 0">无设备信息</ion-item>
-  <button class="device-item" ion-item *ngFor="let device of devices" (click)="openDetail(device)">
+  <ion-item *ngIf="devList.length == 0">无设备信息</ion-item>
+  <button class="device-item" ion-item *ngFor="let device of devList" (click)="openDetail(device)">
       <ion-row class="deviceInfo-row">
         <ion-col width-20 align-self-center>
           <img [attr.src]="'assets/images/brand_' + device.devType.devVendor.name + '.svg'"
