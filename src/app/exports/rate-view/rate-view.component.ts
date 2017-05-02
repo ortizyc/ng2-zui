@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { WindowRef } from "../util/ref";
 
@@ -12,11 +12,22 @@ export class RateViewComponent implements OnInit {
     private _height:number;
     private _width:number;
 
-    constructor(private _win:WindowRef) { }
-
-    ngOnInit() {
-        this._height = this._win.innerHeight * 0.4;
-        this._width = this._win.innerWidth;
+    @Input()
+    set height(h:number){
+        this._height=h;
     }
+
+    @Input()
+    set width(w:number){
+        this._width = w;
+    }
+
+    constructor(private _win:WindowRef) {
+        this._height = (this._height||this._win.innerHeight) * 0.4;
+        this._width = this._width||this._win.innerWidth;
+
+    }
+
+    ngOnInit() {}
 
 }
