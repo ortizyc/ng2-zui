@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from "ionic-angular";
 import { EchartsNg2Module } from "echarts-ng2";
 
+import { DocumentRef, WindowRef } from "./util/ref";
+
 import { MessageComponent } from "./message/message.component";
 import { CircleRateComponent } from "./circle-rate/circle-rate.component";
 import { GridButtonComponent } from './grid-button/grid-button.component';
@@ -39,16 +41,16 @@ const CUSTOM_COMPONENT = [
         IonicModule,
         EchartsNg2Module
     ],
-    providers: [],
+    providers: [DocumentRef, WindowRef],
     exports: [
         ...CUSTOM_COMPONENT
     ]
 })
 export class ZuiNg2Module {
-    static forRoot():ModuleWithProviders{
+    static forRoot(): ModuleWithProviders {
         return {
-            ngModule:ZuiNg2Module,
-            providers:[
+            ngModule: ZuiNg2Module,
+            providers: [
             ]
         }
     }
