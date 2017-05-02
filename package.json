@@ -28,7 +28,8 @@
         "ionic-angular": "2.3",
         "moment": "^2.18.1",
         "rxjs": "^5.1.0",
-        "zone.js": "^0.8.4"
+        "zone.js": "^0.8.4",
+        "pinyin": "^2.8.3"
     },
     "devDependencies": {
         "@angular/cli": "^1.0.0",
@@ -46,7 +47,6 @@
         "karma-jasmine": "~1.1.0",
         "karma-jasmine-html-reporter": "^0.2.2",
         "line-numbers": "^0.2.2",
-        "pinyin": "^2.8.3",
         "protractor": "~5.1.0",
         "ts-node": "~2.0.0",
         "tslint": "~4.5.0",

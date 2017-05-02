@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { WindowRef } from "../util/ref";
 
 @Component({
     selector: 'zui-rate-view',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RateViewComponent implements OnInit {
 
-    constructor() { }
+    private _height:number;
+    private _width:number;
 
-    ngOnInit() {
+    @Input()
+    set height(h:number){
+        this._height=h;
     }
+
+    @Input()
+    set width(w:number){
+        this._width = w;
+    }
+
+    constructor(private _win:WindowRef) {
+        this._height = (this._height||this._win.innerHeight) * 0.4;
+        this._width = this._width||this._win.innerWidth;
+
+    }
+
+    ngOnInit() {}
 
 }

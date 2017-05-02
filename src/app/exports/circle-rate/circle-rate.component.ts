@@ -32,6 +32,9 @@ export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
     height:number = 320;
 
     @Input()
+    width:number;
+
+    @Input()
     type:string = "平均开机率";
 
     constructor(private _changeDetectorRef:ChangeDetectorRef) {
@@ -44,8 +47,8 @@ export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
 
     ngAfterViewInit() {
             this._percent = (this.percent * 100).toFixed(1) + '';    //界面显示精确小数点
-            this._clientHeight = this._echartsNg2Component.getHeight();
-            this._clientWidth = this._echartsNg2Component.getWidth();
+            this._clientHeight = this.height;
+            this._clientWidth = this.width;
             this.echartsNg2Init();
             this._changeDetectorRef.detectChanges()
     }
