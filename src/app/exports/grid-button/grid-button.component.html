@@ -1,5 +1,5 @@
-<div class="grid_button_group" *ngFor="let btns of btnss" (click)="onClick(btn)">
-    <div class="grid_button" *ngFor="let btn of btns;">
+<div class="grid_button_group" *ngFor="let btns of btnss">
+    <div class="grid_button" *ngFor="let btn of btns;" (click)="onClick(btn)">
         <ul>
             <li><img [attr.src]="btn.icon"></li>
             <li>{{btn.name}}</li>
