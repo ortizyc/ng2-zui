@@ -1,13 +1,13 @@
 .rate-view{
     font-family: PingFangSC-Regular;
     width:100%;
-    .rate-view_bg{
-        content:url('../assets/images/home_bg.png');
-        height:45rem;
-    }
     .rate-view_body{
         position:absolute;
         top:0px;
+        background-image: url('../assets/images/home_bg.png');
+        width:100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         flex-direction: column;
         align-content: center;
         .rate-view_body-title{
