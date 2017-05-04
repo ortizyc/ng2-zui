@@ -32,7 +32,7 @@ export class CircleRateComponent implements OnInit, AfterViewInit, OnChanges {
     height:number = 320;
 
     @Input()
-    width:number;
+    width:number=400;
 
     @Input()
     type:string = "平均开机率";
