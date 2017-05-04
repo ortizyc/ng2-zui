@@ -1,37 +1,18 @@
 <div class="rate-view">
-    <div class="rate-view_body">
-        <div class="rate-view_body-title">设备概览</div>
-        <div class="rate-view_circle">
-            <zui-circle-rate [percent]='0.5' [height]="_height" [width]='_width'></zui-circle-rate>
-        </div>
-        <div class="rate-view_grid">
-            <div class="rate-view_grid-row">
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">460</div>
-                    <div class="rate-tip">正常</div>
-                </div>
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">26</div>
-                    <div class="rate-tip">暂停服务</div>
-                </div>
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">28</div>
-                    <div class="rate-tip">维护</div>
-                </div>
-            </div>
-            <div class="rate-view_grid-row">
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">34</div>
-                    <div class="rate-tip">通讯故障</div>
-                </div>
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">35</div>
-                    <div class="rate-tip">关机</div>
-                </div>
-                <div class="rate-view_grid-col">
-                    <div class="rate-number">89</div>
-                    <div class="rate-tip">对外服务</div>
-                </div>
+    <div class="rate-view_body-title">{{title}}</div>
+    <div id="main" class="rate-view_circle"></div>
+    <div class="title_panel-div">
+        <ul>
+            <li class="title_panel_time">{{description}}</li>
+            <li class="title_panel_value">{{_percent}}<span>%</span></li>
+            <li class="title_panel_sub">{{name}}</li>
+        </ul>
+    </div>
+    <div class="rate-view_grid">
+        <div class="rate-view_grid-row" *ngFor="let element of dataList">
+            <div class="rate-view_grid-col"  *ngFor="let item of element" >
+                <div class="rate-number">{{item.value}}</div>
+                <div class="rate-tip">{{item.name}}</div>
             </div>
         </div>
     </div>
