@@ -2,12 +2,10 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { IonicModule } from "ionic-angular";
-import { EchartsNg2Module } from "echarts-ng2";
 
 import { DocumentRef, WindowRef } from "./util/ref";
 
 import { MessageComponent } from "./message/message.component";
-import { CircleRateComponent } from "./circle-rate/circle-rate.component";
 import { GridButtonComponent } from './grid-button/grid-button.component';
 import { TimeAxisComponent } from './time-axis/time-axis.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -20,7 +18,6 @@ import { RateViewComponent } from './rate-view/rate-view.component';
 
 const CUSTOM_COMPONENT = [
     MessageComponent,
-    CircleRateComponent,
     GridButtonComponent,
     TimeAxisComponent,
     ContactsComponent,
@@ -38,8 +35,7 @@ const CUSTOM_COMPONENT = [
     ],
     imports: [
         CommonModule,
-        IonicModule,
-        EchartsNg2Module
+        IonicModule
     ],
     providers: [DocumentRef, WindowRef],
     exports: [
