@@ -33,7 +33,15 @@ export class Message {
 export class MessageComponent implements OnInit {
 
     @Input()
-    msgList:Array<Message> = new Array<Message>();
+    msgList:Array<Message> = [new Message(
+                "10-28 14:30",
+                "网络",
+                "80889080(鼓楼·网络故障)",
+                "CASE:9144,网络通讯（NET00408920)",
+                "鼓楼区北京西路359号雨润大厦",
+                "处理中",
+                "吴青峰"
+            )];
 
     @Output()
     msgClick:EventEmitter<Message> = new EventEmitter<Message>();

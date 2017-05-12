@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ZavatarComponent implements OnInit {
 
     @Input()
-    avatarSrc:string;
+    src:string;
 
     @Output()
     loginClick:EventEmitter<any> = new EventEmitter<any>();
