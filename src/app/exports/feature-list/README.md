@@ -26,7 +26,7 @@ export class AppComponent {
     content = [
         {
             label: '历史监控',
-            name: '开通率历史数据',
+            note: '开通率历史数据',
             click: (event)=> {
                 console.log(123)
             }

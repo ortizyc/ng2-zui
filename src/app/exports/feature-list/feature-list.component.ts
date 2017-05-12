@@ -7,11 +7,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class FeatureListComponent implements OnInit {
   @Input()
-  content = [{label: '功能名称', note: '功能描述', click: (event)=> {console.log(event)}}];
+  content = [{label: '功能名称', note: '功能描述'}];
+  @Output()
+  itemClick = new EventEmitter();
   
   constructor() { }
 
   ngOnInit() {
   }
 
+  clickHandler(item) {
+    this.itemClick.emit(item);
+  }
 }
